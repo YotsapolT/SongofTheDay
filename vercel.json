@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "script.sh",
+            "use": "@vercel/static-build"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "app.py"
+        }
+    ]
+}
